@@ -1,0 +1,42 @@
+[
+  {
+    "model": "web.socialmedia",
+    "pk": 1,
+    "fields": {
+      "name": "facebook",
+      "link": "facebook.com"
+    }
+  },
+  {
+    "model": "web.socialmedia",
+    "pk": 2,
+    "fields": {
+      "name": "github",
+      "link": "github.com"
+    }
+  },
+  {
+    "model": "web.socialmedia",
+    "pk": 3,
+    "fields": {
+      "name": "linkedin",
+      "link": "linkedin.com"
+    }
+  },
+  {
+    "model": "web.socialmedia",
+    "pk": 4,
+    "fields": {
+      "name": "instagram",
+      "link": "instagram.com"
+    }
+  },
+  {
+    "model": "web.socialmedia",
+    "pk": 5,
+    "fields": {
+      "name": "whatsapp",
+      "link": "whatsapp.com"
+    }
+  }
+]

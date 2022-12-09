@@ -1,0 +1,18 @@
+[
+  {
+    "model": "web.email",
+    "pk": 1,
+    "fields": {
+      "email": "yegecali@gmail.com",
+      "isMain": true
+    }
+  },
+  {
+    "model": "web.email",
+    "pk": 2,
+    "fields": {
+      "email": "yegecali@outlook.com",
+      "isMain": true
+    }
+  }
+]

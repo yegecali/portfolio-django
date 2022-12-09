@@ -1,0 +1,42 @@
+[
+  {
+    "model": "web.colleague",
+    "pk": 1,
+    "fields": {
+      "name": "customer 1",
+      "link": "127.0.0.1:8000/customer/any"
+    }
+  },
+  {
+    "model": "web.colleague",
+    "pk": 2,
+    "fields": {
+      "name": "customer 2",
+      "link": "127.0.0.1:8000/customer/any"
+    }
+  },
+  {
+    "model": "web.colleague",
+    "pk": 3,
+    "fields": {
+      "name": "customer 3",
+      "link": "127.0.0.1:8000/customer/any"
+    }
+  },
+  {
+    "model": "web.colleague",
+    "pk": 4,
+    "fields": {
+      "name": "customer 4",
+      "link": "127.0.0.1:8000/customer/any"
+    }
+  },
+  {
+    "model": "web.colleague",
+    "pk": 5,
+    "fields": {
+      "name": "customer 5",
+      "link": "127.0.0.1:8000/customer/any"
+    }
+  }
+]

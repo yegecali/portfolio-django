@@ -1,0 +1,42 @@
+[
+  {
+    "model": "web.service",
+    "pk": 1,
+    "fields": {
+      "name": "service 1",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also t"
+    }
+  },
+  {
+    "model": "web.service",
+    "pk": 2,
+    "fields": {
+      "name": "service 2",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also t"
+    }
+  },
+  {
+    "model": "web.service",
+    "pk": 3,
+    "fields": {
+      "name": "service 3",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also t"
+    }
+  },
+  {
+    "model": "web.service",
+    "pk": 4,
+    "fields": {
+      "name": "service 4",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also t"
+    }
+  },
+  {
+    "model": "web.service",
+    "pk": 5,
+    "fields": {
+      "name": "service 5",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also t"
+    }
+  }
+]

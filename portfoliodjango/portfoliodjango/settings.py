@@ -32,7 +32,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'portfoliodjango.urls'
-
+FIXTURE_DIRS = os.path.join(BASE_DIR, 'fixtures'),
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -52,7 +52,7 @@ WSGI_APPLICATION = 'portfoliodjango.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'postgres',
+        'NAME': env('DB_NAME'),
         'USER': env('DB_USERNAME'),
         'PASSWORD': env('DB_PASSWORD'),
         'HOST': env('DB_HOST'),

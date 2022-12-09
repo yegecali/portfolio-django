@@ -1,0 +1,20 @@
+[
+  {
+    "model": "web.telephone",
+    "pk": 1,
+    "fields": {
+      "codeCountry": "+51",
+      "phone": "939234511",
+      "isMain": true
+    }
+  },
+  {
+    "model": "web.telephone",
+    "pk": 2,
+    "fields": {
+      "codeCountry": "+51",
+      "phone": "961473310",
+      "isMain": false
+    }
+  }
+]

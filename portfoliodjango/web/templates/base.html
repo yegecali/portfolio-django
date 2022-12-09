@@ -9,25 +9,30 @@
     <link rel="stylesheet" href="{% static 'css/layout.css' %}" />
     <!-- animation when scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     {% block css %} {% endblock %}
   </head>
   <body id="body-content" class="theme-dark">
-    <main class="main_container"  >
-      <header >
+    <main class="main_container">
+      <header>
         <button id="btn-change-theme" class="btn-theme" onclick="changeTheme()">
           change theme light
         </button>
       </header>
       <section>{% block content %} {% endblock %}</section>
       <footer class="main-footer">
-        © Yemi Genderson Canchari Lizarbe. <span id="copy-year" ></span> All rigths reserved
+        © Yemi Genderson Canchari Lizarbe. <span id="copy-year"></span> All
+        rigths reserved
       </footer>
     </main>
     {% block js %} {% endblock %}
     <!-- animation when scroll -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- particles --> 
-     <!-- <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> -->
-     <script src="{% static 'js/template.js' %}"></script>
+    <!-- particles -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> -->
+    <script src="{% static 'js/template.js' %}"></script>
   </body>
 </html>

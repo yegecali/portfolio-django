@@ -1,0 +1,386 @@
+[
+  {
+    "model": "web.detailskill",
+    "pk": 1,
+    "fields": {
+      "name": "html"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 2,
+    "fields": {
+      "name": "css"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 3,
+    "fields": {
+      "name": "js"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 4,
+    "fields": {
+      "name": "pug"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 5,
+    "fields": {
+      "name": "scss"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 6,
+    "fields": {
+      "name": "webpack"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 7,
+    "fields": {
+      "name": "babel"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 8,
+    "fields": {
+      "name": "react"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 9,
+    "fields": {
+      "name": "styled-components"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 10,
+    "fields": {
+      "name": "redux"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 11,
+    "fields": {
+      "name": "figma"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 12,
+    "fields": {
+      "name": "angular"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 13,
+    "fields": {
+      "name": "typescript"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 14,
+    "fields": {
+      "name": "rxjs"
+    }
+  },
+
+
+
+
+
+  {
+    "model": "web.detailskill",
+    "pk": 15,
+    "fields": {
+      "name": "python"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 16,
+    "fields": {
+      "name": "django"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 17,
+    "fields": {
+      "name": "Java"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 18,
+    "fields": {
+      "name": "spring boot"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 19,
+    "fields": {
+      "name": "rxjava"
+    }
+  },{
+    "model": "web.detailskill",
+    "pk": 20,
+    "fields": {
+      "name": "Spring data"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 21,
+    "fields": {
+      "name": "spring cloud"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 22,
+    "fields": {
+      "name": "maven"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 23,
+    "fields": {
+      "name": "retrofit"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 24,
+    "fields": {
+      "name": "junit"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 25,
+    "fields": {
+      "name": "mockito"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 26,
+    "fields": {
+      "name": "c#"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 27,
+    "fields": {
+      "name": "entity framework"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 28,
+    "fields": {
+      "name": "nuget"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 29,
+    "fields": {
+      "name": ".net core"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 30,
+    "fields": {
+      "name": ".net core"
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "model": "web.detailskill",
+    "pk": 31,
+    "fields": {
+      "name": "fortify"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 32,
+    "fields": {
+      "name": "kibana"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 33,
+    "fields": {
+      "name": "jfrog"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 34,
+    "fields": {
+      "name": "xray"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 35,
+    "fields": {
+      "name": "dinatrice"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 36,
+    "fields": {
+      "name": "sonargube"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 37,
+    "fields": {
+      "name": "docker"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 38,
+    "fields": {
+      "name": "kubernetes"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 39,
+    "fields": {
+      "name": "jenkins"
+    }
+  }
+  ,{
+    "model": "web.detailskill",
+    "pk":40,
+    "fields": {
+      "name": "swagger hub"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 41,
+    "fields": {
+      "name": "git"
+    }
+  },
+
+
+
+
+
+
+
+
+  {
+    "model": "web.detailskill",
+    "pk": 42,
+    "fields": {
+      "name": "redis"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 43,
+    "fields": {
+      "name": "sql server"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 44,
+    "fields": {
+      "name": "cosmos db"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 45,
+    "fields": {
+      "name": "table storage"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 46,
+    "fields": {
+      "name": "mysql"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 47,
+    "fields": {
+      "name": "mongo db"
+    }
+  },
+  {
+    "model": "web.detailskill",
+    "pk": 48,
+    "fields": {
+      "name": "posgres"
+    }
+  },
+
+
+
+  {
+    "model": "web.detailskill",
+    "pk": 49,
+    "fields": {
+      "name": "react native"
+    }
+  },
+
+
+
+
+
+
+
+  {
+    "model": "web.detailskill",
+    "pk": 50,
+    "fields": {
+      "name": "electron"
+    }
+  }
+
+]

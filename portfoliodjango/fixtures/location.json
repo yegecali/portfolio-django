@@ -1,0 +1,18 @@
+[
+  {
+    "model": "web.location",
+    "pk": 1,
+    "fields": {
+      "country": "peru",
+      "city": "ayacucho"
+    }
+  },
+  {
+    "model": "web.location",
+    "pk": 2,
+    "fields": {
+      "country": "peru",
+      "city": "lima"
+    }
+  }
+]

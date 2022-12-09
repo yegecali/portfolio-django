@@ -1,0 +1,32 @@
+[
+  {
+    "model": "web.education",
+    "pk": 1,
+    "fields": {
+      "company": "Universidad Nacional San Cristobal de Huamanga",
+      "topic": "Ing. Sistemas",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown ",
+      "img": "127.0.0.1/img.jpg"
+    }
+  },
+  {
+    "model": "web.education",
+    "pk": 2,
+    "fields": {
+      "company": "Ntt Data",
+      "topic": "Bootcamp of Microservices",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown ",
+      "img": "127.0.0.1/img.jpg"
+    }
+  },
+  {
+    "model": "web.education",
+    "pk": 1,
+    "fields": {
+      "company": "Udemmy",
+      "topic": "Java 8 and Java 11",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown ",
+      "img": "127.0.0.1/img.jpg"
+    }
+  }
+]

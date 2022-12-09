@@ -1,0 +1,47 @@
+[
+  {
+    "model": "web.colleague",
+    "pk": 1,
+    "fields": {
+      "name": "customer 1",
+      "link": "127.0.0.1:8000/anny-url",
+      "img": "127.0.0.1:8000/anny-url"
+    }
+  },
+  {
+    "model": "web.colleague",
+    "pk": 2,
+    "fields": {
+      "name": "customer 2",
+      "link": "127.0.0.1:8000/anny-url",
+      "img": "127.0.0.1:8000/anny-ur"
+    }
+  },
+  {
+    "model": "web.colleague",
+    "pk": 3,
+    "fields": {
+      "name": "customer 3",
+      "link": "127.0.0.1:8000/anny-url",
+      "img": "127.0.0.1:8000/anny-url"
+    }
+  },
+  {
+    "model": "web.colleague",
+    "pk": 3,
+    "fields": {
+      "name": "customer 3",
+      "link": "127.0.0.1:8000/anny-url",
+      "img": "127.0.0.1:8000/anny-ur"
+    }
+  },
+  {
+    "model": "web.colleague",
+    "pk": 4,
+    "fields": {
+      "name": "customer 4",
+      "link": "127.0.0.1:8000/anny-url",
+      "img": "127.0.0.1:8000/anny-url"
+    }
+  }
+]

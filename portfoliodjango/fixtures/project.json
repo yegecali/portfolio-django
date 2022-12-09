@@ -1,0 +1,34 @@
+[
+  {
+    "model": "web.project",
+    "pk": 1,
+    "fields": {
+      "name": "project 1",
+      "img": "127.0.0.1/any"
+    }
+  },
+  {
+    "model": "web.project",
+    "pk": 2,
+    "fields": {
+      "name": "project 2",
+      "img": "127.0.0.1/any"
+    }
+  },
+  {
+    "model": "web.project",
+    "pk": 3,
+    "fields": {
+      "name": "project 3",
+      "img": "127.0.0.1/any"
+    }
+  },
+  {
+    "model": "web.project",
+    "pk": 4,
+    "fields": {
+      "name": "project 4",
+      "img": "127.0.0.1/any"
+    }
+  }
+]
