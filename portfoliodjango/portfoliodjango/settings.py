@@ -1,8 +1,13 @@
 from pathlib import Path
 import os
-
+import environ
+env = environ.Env()
 BASE_DIR = Path(__file__).resolve().parent.parent
-SECRET_KEY = 'django-insecure-j(+=p$!u-u6-ust_37)uf*kg^zq@#!#nk=lpknnbisj(=ulr&c'
+environ.Env.read_env(
+    os.path.join(BASE_DIR, '.env.local')
+)
+
+SECRET_KEY = env("SECRET_TEXT")
 DEBUG = True
 ALLOWED_HOSTS = []
 INSTALLED_APPS = [
@@ -51,10 +56,10 @@ DATABASES = {
     #     'NAME': BASE_DIR / 'db.sqlite3',
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'USER': env('DB_USERNAME'),
+        'PASSWORD': env('DB_PASSWORD'),
+        'HOST': env('DB_HOST'),
+        'PORT': env('DB_PORT'),
     }
 }
 AUTH_PASSWORD_VALIDATORS = [
