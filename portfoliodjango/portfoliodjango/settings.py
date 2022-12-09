@@ -6,7 +6,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 environ.Env.read_env(
     os.path.join(BASE_DIR, '.env.local')
 )
-
 SECRET_KEY = env("SECRET_TEXT")
 DEBUG = True
 ALLOWED_HOSTS = []
@@ -37,7 +36,7 @@ ROOT_URLCONF = 'portfoliodjango.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'templates')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -52,8 +51,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'portfoliodjango.wsgi.application'
 DATABASES = {
     'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': BASE_DIR / 'db.sqlite3',
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'postgres',
         'USER': env('DB_USERNAME'),

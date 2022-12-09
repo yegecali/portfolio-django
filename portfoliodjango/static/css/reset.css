@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Merriweather&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, thead {
+    font-family: 'Karla', sans-serif;
+}
+div, span, p, a, ul, li, ol, tbody{
+    font-family: 'Merriweather', serif;
+}
