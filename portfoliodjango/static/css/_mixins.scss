@@ -1,0 +1,15 @@
+@import "vars";
+@mixin applyDark{
+    background-color: $background_dark;
+    color: $text_dark;
+    span{
+        color: $sub_text_dark;
+    }
+}
+@mixin applyLight{
+    background-color:  $background_light;
+    color: $text_light;
+    span{
+        color: $sub_text_light;
+    }
+}

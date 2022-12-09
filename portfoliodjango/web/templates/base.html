@@ -6,29 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{% static 'css/reset.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/layout.css' %}" />
     <!-- animation when scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     {% block css %} {% endblock %}
   </head>
-  <body>
-    <header>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos optio id
-      earum aut sint eveniet iure dolorem, neque iusto aliquid totam minima,
-      praesentium vel facere inventore perspiciatis mollitia dolorum eum!
-    </header>
-    <section>{% block content %} {% endblock %}</section>
-    <footer>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-      reprehenderit nihil eum recusandae nobis repellat, assumenda doloremque
-      itaque! Autem ad voluptas temporibus in dolor aspernatur eius saepe alias
-      doloribus repellendus.
-    </footer>
+  <body id="body-content" class="theme-dark">
+    <main class="main_container"  >
+      <header >
+        <button id="btn-change-theme" class="btn-theme" onclick="changeTheme()">
+          change theme light
+        </button>
+      </header>
+      <section>{% block content %} {% endblock %}</section>
+      <footer class="main-footer">
+        © Yemi Genderson Canchari Lizarbe. <span id="copy-year" ></span> All rigths reserved
+      </footer>
+    </main>
     {% block js %} {% endblock %}
     <!-- animation when scroll -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    s
+    <!-- particles --> 
+     <!-- <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> -->
+     <script src="{% static 'js/template.js' %}"></script>
   </body>
 </html>

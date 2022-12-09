@@ -16,6 +16,6 @@ a {
 h1, h2, h3, h4, h5, h6, thead {
     font-family: 'Karla', sans-serif;
 }
-div, span, p, a, ul, li, ol, tbody{
+div, span, p, a, ul, li, ol, tbody, section{
     font-family: 'Merriweather', serif;
 }

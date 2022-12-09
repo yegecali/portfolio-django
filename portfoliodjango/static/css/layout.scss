@@ -1,0 +1,21 @@
+// @import "vars";
+@import 'mixins';
+
+.theme-dark {
+  @include applyDark();
+  transition: $transition;
+}
+.theme-light{
+  @include applyLight();
+  transition: $transition;
+}
+
+.main_container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  .main-footer {
+    padding: 10px;
+    text-align: center;
+  }
+}

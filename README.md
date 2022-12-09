@@ -29,6 +29,11 @@ SECRET_TEXT=YOUR_SECRET_APP
 ```commandline
 python manage.py runserver
 ```
+8. Working scss
+```commandline
+npm i -g sass
+```
+9. 
 8. Example Figma
 ![img.png](assets/img.png)
 ![img_1.png](assets/img_1.png)
