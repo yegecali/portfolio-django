@@ -8,6 +8,12 @@
 
 {% block content %}
 Sign In
+<form class="form" method="post" >
+    {% csrf_token %}
+{{ form.as_p }}
+<button type="submit" id="submit" > Sign In </button>
+
+</form>
 {% endblock content %}
 
 {% block js %}
