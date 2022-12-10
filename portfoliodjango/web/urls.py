@@ -6,4 +6,5 @@ urlpatterns = [
     path("sign-in/", LoginView.as_view(template_name="sign-in.html"), name="signin"),
     path("register/", page_register, name="register"),
     path("admin/", page_admin, name="admin"),
+    path("logout/", LogoutView.as_view(), name="logout")
 ]

@@ -6,12 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{% static 'css/reset.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/auth.css' %}" />
     {% block css %}
     {% endblock %}
   </head>
     <body>
-        {% block content %}
-        {% endblock %}
+      <div class="main-container" >
+        <div class="distort"></div>
+        <div class="content-login">
+          {% block content %}
+          {% endblock %}
+        </div>
+      </div>
     </body>
     {% block js %}
     {% endblock %}

@@ -14,6 +14,7 @@
   padding: 8px 13px;
   background-color: #A3ABB2;
   color: #F1F2F4;
+  border-radius: 5px;
 }
 .theme-dark .btn_block:hover {
   cursor: pointer;
@@ -26,6 +27,7 @@
   padding: 8px 13px;
   background-color: #F1F2F4;
   color: #A3ABB2;
+  border-radius: 5px;
 }
 .theme-dark .btn_block--active:hover {
   cursor: pointer;
@@ -47,6 +49,7 @@
   padding: 8px 13px;
   background-color: #fff;
   color: #3D3D3D;
+  border-radius: 5px;
 }
 .theme-light .btn_block:hover {
   cursor: pointer;
@@ -59,6 +62,7 @@
   padding: 8px 13px;
   background-color: #3D3D3D;
   color: #fff;
+  border-radius: 5px;
 }
 .theme-light .btn_block--active:hover {
   cursor: pointer;
@@ -68,6 +72,7 @@
   width: 80%;
   margin: auto;
   padding: 20px;
+  position: relative;
 }
 .main_container .main_header {
   position: relative;
@@ -96,6 +101,27 @@
 .main_container .main_footer {
   padding: 10px;
   text-align: center;
+}
+.main_container .btn_auth {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main_container .btn_auth span {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 8px;
+}
+.main_container .btn_auth span a:link, .main_container .btn_auth span a:visited, .main_container .btn_auth span a:focus, .main_container .btn_auth span a:hover, .main_container .btn_auth span a:active {
+  color: #000;
+}
+.main_container .btn_auth span i {
+  font-size: 1.3em;
 }
 
 /*# sourceMappingURL=layout.css.map */

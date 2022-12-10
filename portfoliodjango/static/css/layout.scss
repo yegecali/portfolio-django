@@ -13,6 +13,7 @@
   width: 80%;
   margin: auto;
   padding: 20px;
+  position: relative;
   .main_header{
     position: relative;
     height: 80px;
@@ -35,4 +36,27 @@
     padding: 10px;
     text-align: center;
   }
+  .btn_auth{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    span{
+      padding: 20px;
+      background-color: $white;
+      border-radius: 50%;
+      margin: 8px;
+      a:link, a:visited, a:focus, a:hover, a:active{
+        color: $black;
+      }
+
+      i{
+        font-size: 1.3em;
+      }
+    }
+  }
 }
+

@@ -28,6 +28,23 @@
         © Yemi Genderson Canchari Lizarbe. <span id="copy-year"></span> All
         rigths reserved
       </footer>
+      <section class="btn_auth" >
+        {% if request.user.is_authenticated %}
+        <span>
+          <a href="{% url 'admin' %}"><i class="fa-solid fa-gear"></i></a>
+        </span>
+        <span>
+          <a href="{% url 'logout' %}?next=/" ><i class="fa-solid fa-right-from-bracket"></i></a>
+        </span>
+        {% else %}
+        <span>
+          <a href="{% url 'signin' %}"><i class="fa-solid fa-right-to-bracket"></i></a>
+        </span>
+        <span>
+          <a href="{% url 'register' %}"><i class="fa-solid fa-user-plus"></i></a>
+        </span>
+        {% endif %}
+      </section>
     </main>
     {% block js %} {% endblock %}
     <!-- animation when scroll -->

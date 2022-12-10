@@ -1,0 +1,25 @@
+.section-login {
+  padding: 10px;
+  color: #fff;
+}
+.section-login--title {
+  font-size: 1.6em;
+  font-weight: 500;
+  text-align: center;
+  margin: 5px 0;
+}
+.section-login form .btn-submit {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  padding: 8px 13px;
+  background-color: #FFE071;
+  color: #000;
+  border-radius: 5px;
+}
+.section-login form .btn-submit:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=login.css.map */

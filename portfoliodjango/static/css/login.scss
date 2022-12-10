@@ -1,0 +1,17 @@
+@import "vars";
+@import "mixins";
+.section-login{
+    padding: 10px;
+    color: $white;
+    &--title{
+        font-size: 1.6em;
+        font-weight: 500;
+        text-align: center;
+        margin: 5px 0;
+    }
+    form{
+        .btn-submit{
+            @include btn_block($primary, $black);
+        }
+    }
+}
