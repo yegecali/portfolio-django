@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{% static 'css/layout.css' %}" />
     <!-- animation when scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/b75ee0fbbb.js" crossorigin="anonymous"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -17,13 +18,13 @@
   </head>
   <body id="body-content" class="theme-dark">
     <main class="main_container">
-      <header>
-        <button id="btn-change-theme" class="btn-theme" onclick="changeTheme()">
-          change theme light
+      <header class="main_header" >
+        <button id="btn-change-theme" class="btn_theme" onclick="changeTheme()">
+          <i class='fa-solid fa-sun'></i>
         </button>
       </header>
       <section>{% block content %} {% endblock %}</section>
-      <footer class="main-footer">
+      <footer class="main_footer">
         © Yemi Genderson Canchari Lizarbe. <span id="copy-year"></span> All
         rigths reserved
       </footer>

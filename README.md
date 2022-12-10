@@ -25,7 +25,11 @@ DB_HOST=YOUR_HOST_DB
 DB_PORT=YOUR_PORT_DB
 SECRET_TEXT=YOUR_SECRET_APP
 ```
-7. Run aplication
+7. Load data initial 
+```commandline
+python manage.py loaddata *.json
+```
+8. Run aplication
 ```commandline
 python manage.py runserver
 ```

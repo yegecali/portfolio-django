@@ -1,0 +1,66 @@
+@import 'mixins';
+@import "vars";
+.section_profile{
+    padding: 10px;
+    .profile_main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        @include viewTablet(){
+            flex-direction: row;
+        }
+        @include viewDesktop(){
+            flex-direction: row;
+        }
+        .profile_img{
+            padding: 3px;
+            border: 6px dashed $primary;
+            border-radius: 50%;
+            transition: border linear 5s;
+            margin-bottom: 20px;
+            &:hover{
+                border: 6px solid $primary;
+            }
+            .profile_thumbnail{
+                border-radius: 50%;
+            }
+        }
+        .profile_desc{
+            text-align: center;
+            .profile_name{
+                font-size: 3em;
+            }
+            .profile_social{
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                span{
+                    margin: 0 10px;
+                    font-size: 2em;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .section_stats{
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+        &_items{
+            margin: 0 10px;
+        }
+        &_items span{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            .section_stats_number{
+                font: 1.9em;
+            }
+        }
+    }
+}

@@ -5,7 +5,7 @@ let spanYearCopy = document.getElementById("copy-year")
 let bodyContent = document.getElementById("body-content")
 function changeTheme(){
     isDark = !isDark
-    btnChangeTheme.innerHTML = isDark ? "change theme light" : "change theme dark"
+    btnChangeTheme.innerHTML = isDark ? "<i class='fa-solid fa-sun'></i>" : "<i class='fa-solid fa-moon'></i>"
     bodyContent.className = isDark ? "theme-dark" : "theme-light"
 }
 

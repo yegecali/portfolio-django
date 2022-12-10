@@ -1,6 +1,5 @@
 // @import "vars";
 @import 'mixins';
-
 .theme-dark {
   @include applyDark();
   transition: $transition;
@@ -14,7 +13,25 @@
   width: 80%;
   margin: auto;
   padding: 20px;
-  .main-footer {
+  .main_header{
+    position: relative;
+    height: 80px;
+    .btn_theme{
+      @include btn;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      border-radius: 50%;
+      padding: 10px;
+      margin: 10px 0 ;
+      i{
+        font-size: 1.5em;
+      }
+    }
+  }
+  .main_footer {
     padding: 10px;
     text-align: center;
   }

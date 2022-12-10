@@ -1,15 +1,78 @@
-{% extends 'base.html' %}
-
-{% block title %}
-- index
-{% endblock title %}
-
+{% extends 'layout/base-layout.html' %}
+{% load static %} 
+{% block title %} - index 
+{% endblock title %} 
 {% block css %}
-{% endblock css %}
-
+<link rel="stylesheet" href="{% static 'css/index.css' %}" />
+{% endblock css %} 
 {% block content %}
-Main content of index.html
-{% endblock content %}
 
+<!-- section profile -->
+<section class="section_profile">
+  <article class="profile_main">
+    <div class="profile_img">
+      <img
+        class="profile_thumbnail"
+        src="https://picsum.photos/200/200.jpg"
+        alt="profile"
+      />
+    </div>
+    <div class="profile_desc">
+      <h3 class="profile_name">Yemi Genderson</h3>
+      <span class="profile_role"> Software Engineer </span>
+      <div class="profile_social">
+        <span><i class="fa-brands fa-github"></i></span>
+        <span><i class="fa-brands fa-linkedin"></i></span>
+        <span><i class="fa-brands fa-whatsapp"></i></span>
+        <span><i class="fa-brands fa-facebook"></i></span>
+      </div>
+    </div>
+  </article>
+  <article class="section_stats">
+    <div class="section_stats_items">
+      <span>
+        <span class="section_stats_number">10</span>
+        <span class="section_stats_text"> years of work experience </span>
+      </span>
+    </div>
+    <div class="section_stats_items">
+      <span>
+        <span class="section_stats_number">20+</span>
+        <span class="section_stats_text"> completed projects </span>
+      </span>
+    </div>
+    <div class="section_stats_items">
+      <span>
+        <span class="section_stats_number">10+</span>
+        <span class="section_stats_text"> personal side projects </span>
+      </span>
+    </div>
+  </article>
+  <article>
+    <div>
+      <button>Download CV <i class="fa-solid fa-download"></i></button>
+      <button class="btn-block">Contact me</button>
+    </div>
+  </article>
+</section>
+
+<!-- switch portfolio and skill -->
+<section>
+  <button>Portfolio</button>
+  <button>skill</button>
+</section>
+<!-- end switch portfolio and skill -->
+
+<section>
+  <!-- content portfolio -->
+  <article></article>
+  <!-- end content portfolio -->
+
+  <!-- content skill -->
+  <article></article>
+  <!-- end content skill -->
+</section>
+
+{% endblock content %} 
 {% block js %}
-{% endblock js %}
+ {% endblock js %}

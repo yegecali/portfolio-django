@@ -1,15 +1,65 @@
 @import "vars";
-@mixin applyDark{
-    background-color: $background_dark;
-    color: $text_dark;
-    span{
-        color: $sub_text_dark;
-    }
+@mixin applyDark {
+  background-color: $background_dark;
+  color: $text_dark;
+  span {
+    color: $sub_text_dark;
+  }
+  .btn_block{
+    @include btn_block($sub_text_dark,$text_dark )
+  }  
+  .btn_block--active{
+    @include btn_block($text_dark, $sub_text_dark)
+  }
 }
-@mixin applyLight{
-    background-color:  $background_light;
-    color: $text_light;
-    span{
-        color: $sub_text_light;
-    }
+@mixin applyLight {
+  background-color: $background_light;
+  color: $text_light;
+  span {
+    color: $sub_text_light;
+  }
+  .btn_block{
+    @include btn_block($white,$text_light )
+  }
+  .btn_block--active{
+    @include btn_block($text_light, $white)
+  } 
+
+}
+@mixin btn {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@mixin viewMobile {
+  @media (min-witdh: 1px) and (max-witdh: #{$max_mobile - 1px}) {
+    @content;
+  }
+}
+@mixin viewTablet {
+  @media (min-witdh: $max_mobile) and (max-witdh: #{$max_tablet - 1px}) {
+    @content;
+  }
+}
+@mixin viewDesktop {
+  @media (min-witdh: $max_tablet) and (max-witdh: #{$max_desktop - 1px}) {
+    @content;
+  }
+}
+@mixin viewLarge {
+  @media (min-witdh: $max_desktop) and (max-witdh: #{$max_large - 1px}) {
+    @content;
+  }
+}
+
+@mixin btn_block($color_btn, $color_text){
+    @include btn;
+    padding: 8px 13px;
+    background-color: $color_btn;
+    color: $color_text;
 }

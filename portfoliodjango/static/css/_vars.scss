@@ -3,14 +3,18 @@ $background_dark: #171F26;
 $sub_text_dark: #A3ABB2;
 $text_dark: #F1F2F4;
 // theme light
-$background_light: #E9EBEC;
+$background_light: #E5E5E5;
 $sub_text_light: #575757;
 $text_light: #3D3D3D;
 
-$background: $background_dark;
-$sub_text: $sub_text_dark;
-$text: $text_dark;
+$white: #fff;
+$black: #000;
 
 $primary: #FFE071;
 
-$transition: all linear 0.5s
+$transition: all linear 0.5s;
+
+$max_mobile: 576px;
+$max_tablet: 768px;
+$max_desktop: 992px;
+$max_large: 1200px;
