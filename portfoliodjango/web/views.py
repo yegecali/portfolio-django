@@ -1,9 +1,15 @@
 from django.shortcuts import render, redirect
 from.forms import USerRegisterForm
 from django.contrib import messages
+from .models import *
 # Create your views here.
 def page_index(request):
-    return render(request, "index.html")
+    person = Person.objects.all()[:1].get()
+    context = {
+        "person": person,
+    }
+    print(person)
+    return render(request, "index.html", context)
 def page_sign_in(request):
     return render(request, "sign-in.html")
 def page_register(request):

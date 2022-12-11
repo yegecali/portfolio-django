@@ -8,7 +8,7 @@ environ.Env.read_env(
 )
 SECRET_KEY = env("SECRET_TEXT")
 DEBUG = True
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',

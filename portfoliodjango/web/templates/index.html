@@ -13,13 +13,15 @@
     <div class="profile_img">
       <img
         class="profile_thumbnail"
-        src="https://picsum.photos/200/200.jpg"
+        src="{{ person.img.url }}"
         alt="profile"
-      />
+      /> 
     </div>
     <div class="profile_desc">
-      <h3 class="profile_name">Yemi Genderson</h3>
-      <span class="profile_role"> Software Engineer </span>
+      <h3 class="profile_name">
+        {{ person.name }}
+      </h3>
+      <span class="profile_role"> {{ person.rol }} </span>
       <div class="profile_social">
         <span><i class="fa-brands fa-github"></i></span>
         <span><i class="fa-brands fa-linkedin"></i></span>
@@ -29,24 +31,7 @@
     </div>
   </article>
   <article class="section_stats">
-    <div class="section_stats_items">
-      <span>
-        <span class="section_stats_number">10</span>
-        <span class="section_stats_text"> years of work experience </span>
-      </span>
-    </div>
-    <div class="section_stats_items">
-      <span>
-        <span class="section_stats_number">20+</span>
-        <span class="section_stats_text"> completed projects </span>
-      </span>
-    </div>
-    <div class="section_stats_items">
-      <span>
-        <span class="section_stats_number">10+</span>
-        <span class="section_stats_text"> personal side projects </span>
-      </span>
-    </div>
+    {{ person.description  }}
   </article>
   <article class="section_btn" >
       <button class="btn_primary" >Download CV <i class="fa-solid fa-download"></i></button>
@@ -54,50 +39,60 @@
   </article>
 </section>
 
+<section class="section_page">
+  <div>
+    <i class="fa-solid fa-quote-left"></i>
+    <h3> Skill </h3>
+    <i class="fa-solid fa-quote-right"></i>
+  </div>
+</section>
+
+<section class="section-skills">
+  {% for skill in person.skills.all %}  
+  <section class="section-skill">
+    <div class="skill-circle" style="background-image: url('{{ person.img.url }}');" ></div>
+    <div class="skill-content">
+      <h4 class="skill-title"> {{ skill.name }}</h4>
+      <ul class="skill-items">
+        {% for det in skill.details.all %}
+        <li class="skill-item">{{ det.name }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+  {% endfor %}
+</section>
+
 <!-- switch portfolio and skill -->
 <section class="section_page">
-  <button class="btn_primary">Portfolio</button>
-  <button class="btn_primary">skill</button>
+  <div>
+    <i class="fa-solid fa-quote-left"></i>
+    <h3> Portfolio </h3>
+    <i class="fa-solid fa-quote-right"></i>
+  </div>
 </section>
 <!-- end switch portfolio and skill -->
 
 <section class="section_content" >
   <!-- content portfolio -->
   <article class="content_portfolio">
-    
+    {% for pro in person.projects.all %}
     <div class="portfolio-item" >
-      <div class="content_portfolio__img">
-        <img src="https://picsum.photos/400/300" alt="">
+      <div class="content_portfolio__img" style="background-image: url('{{ pro.img.url }}');">
+        <!-- <img src="{{ pro.img.url }}" alt="{{ pro.name }}"> -->
       </div>
       <div class="content_portfolio__description">
-        <h3>  any title </h3>
-        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis asperiores, eveniet laborum quidem quam consequatur? </p>
+        <h3> {{ pro.name }} </h3>
+        <p> {{ pro.description }} </p>
         <span>
           <a href="#" ><i class="fa-solid fa-link"></i></a>
         </span>
       </div>
     </div>
-
-    <div class="portfolio-item" >
-      <div class="content_portfolio__img">
-        <img src="https://picsum.photos/400/300" alt="">
-      </div>
-      <div class="content_portfolio__description">
-        <h3>  any title </h3>
-        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis asperiores, eveniet laborum quidem quam consequatur? </p>
-        <span>
-          <a href="#" ><i class="fa-solid fa-link"></i></a>
-        </span>
-      </div>
-    </div>
+    {% endfor %}
           
   </article>
   <!-- end content portfolio -->
-
-  <!-- content skill -->
-  <article class="content_skill">
-  </article>
-  <!-- end content skill -->
 </section>
 
 {% endblock content %} 

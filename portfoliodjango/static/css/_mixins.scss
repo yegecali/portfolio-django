@@ -1,4 +1,28 @@
 @import "vars";
+
+@mixin viewMobile {
+  @media (min-witdh: 1px) and (max-witdh: #{$max_mobile - 1px}) {
+    @content;
+  }
+}
+
+@mixin viewTablet {
+  @media (min-witdh: #{$max_mobile}) and (max-witdh: #{$max_tablet - 1px}) {
+    @content;
+  }
+}
+
+@mixin viewDesktop {
+  @media (min-witdh: #{$max_tablet}) and (max-witdh: #{$max_desktop - 1px}) {
+    @content;
+  }
+}
+
+@mixin viewLarge {
+  @media (min-witdh: #{$max_desktop}) and (max-witdh: #{$max_large - 1px}) {
+    @content;
+  }
+}
 @mixin applyDark {
   background-color: $background_dark;
   color: $text_dark;
@@ -33,27 +57,6 @@
   padding: 0;
   &:hover {
     cursor: pointer;
-  }
-}
-
-@mixin viewMobile {
-  @media (min-witdh: 1px) and (max-witdh: #{$max_mobile - 1px}) {
-    @content;
-  }
-}
-@mixin viewTablet {
-  @media (min-witdh: $max_mobile) and (max-witdh: #{$max_tablet - 1px}) {
-    @content;
-  }
-}
-@mixin viewDesktop {
-  @media (min-witdh: $max_tablet) and (max-witdh: #{$max_desktop - 1px}) {
-    @content;
-  }
-}
-@mixin viewLarge {
-  @media (min-witdh: $max_desktop) and (max-witdh: #{$max_large - 1px}) {
-    @content;
   }
 }
 
