@@ -37,7 +37,7 @@ python manage.py runserver
 ```commandline
 npm i -g sass
 ```
-9. 
+9. Get database instance from ElephantSQL https://customer.elephantsql.com/ free version
 8. Example Figma
 ![img.png](assets/img.png)
 ![img_1.png](assets/img_1.png)
